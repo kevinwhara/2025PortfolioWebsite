@@ -2,7 +2,7 @@ import React from "react";
 import NoteCard from "@/components/notesCard";
 
 export default async function NotesPage() {
-  const res = await fetch("http://localhost:3000/api/notes", {
+  const res = await fetch("/api/notes", {
     cache: "no-store"
   });
   const data = await res.json();
