@@ -18,7 +18,7 @@ export const ProjectCard = ({ repo }) => {
                 </span>
             </div>
             
-            <p className="text-sm text-gray-600 mb-4 flex-grow">
+            <p className="text-sm text-gray-600 mb-4 flex-grow line-clamp-2">
                 {repo.description || "No description provided"}
             </p>
             
