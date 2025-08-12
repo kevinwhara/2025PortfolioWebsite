@@ -1,6 +1,6 @@
 export const getGithubRepos = async () => {
     try {
-        const response = await fetch(process.env.NEXT_PUBLIC_API_BASE_URL);
+        const response = await fetch(process.env.NEXT_API_GITHUB_URL);
         if (!response.ok) {
             throw new Error('Failed to fetch repositories');
         }

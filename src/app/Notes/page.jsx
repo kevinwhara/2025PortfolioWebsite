@@ -2,7 +2,7 @@ import React from "react";
 import NoteCard from "@/components/notesCard";
 
 export default async function NotesPage() {
-  const res = await fetch("https://kevinwharas-portfolio.vercel.app/api/notes", {
+  const res = await fetch(process.env.NEXT_API_NOTES_URL, {
     cache: "no-store"
   });
   const data = await res.json();
